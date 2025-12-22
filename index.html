@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix Clone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header id="navbar" class="navbar">
+    <div class="logo">NETFLIX</div>
+    <nav class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">TV Shows</a>
+      <a href="#">Movies</a>
+      <a href="#">My List</a>
+    </nav>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+  </header>
+<section class="banner">
+    <h1>Unlimited Movies, TV Shows and More</h1>
+    <p>Watch anywhere. Cancel anytime.</p>
+  </section>
+<section class="movie-row">
+    <h2>Popular Movies</h2>
+    <div class="movies">
+      <img src="https://ik.imagekit.io/8akopd3mp/dude1759990558_0.jpeg" alt="Movie 1" 
+           data-trailer="https://www.youtube.com/embed/39x89Tl1vMI" onclick="openTrailer(this)">
+      <img src="https://ik.imagekit.io/8akopd3mp/MV5BZThiNzQ0YjctYjc5OC00OWUwLTg0YzUtNzlmZDFiNTI2ZjE5XkEyXkFqcGc@._V1_.jpg" 
+           alt="Movie 2" 
+           data-trailer="https://www.youtube.com/embed/N5MX0K1RJ-8" onclick="openTrailer(this)">
+    </div>
+  </section>
+ <section class="movie-row">
+    <h2>Top Rated</h2>
+    <div class="movies">
+      <img src="https://ik.imagekit.io/8akopd3mp/Vijay%20Beast%20Wallpaper.jpg" alt="Movie 3" data-trailer="https://youtu.be/0E1kVRRi6lk?si=QjKulNoKL_kVC-cm" onclick="openTrailer(this)">
+      <img src="https://ik.imagekit.io/8akopd3mp/Badass%20_LeoSecondSingle.jpg" alt="Movie 4" data-trailer="https://youtu.be/Po3jStA673E?si=7m9iqDWTziT7UI9P" onclick="openTrailer(this)">
+      <img src="https://ik.imagekit.io/8akopd3mp/Jana-Nayagan-60cc0ea0-bf9a-11f0-b304-0f4c139df64c.jpg" alt="Movie 5" data-trailer="https://youtu.be/MKUDHKf_pkg?si=dg91Y6h2QywjREVy" onclick="openTrailer(this)">
+      <img src="https://ik.imagekit.io/8akopd3mp/Tere%20Ishk%20Mein%20Movie%202025%20-%20Cast,%20OTT%20Release_.jpg?updatedAt=1766421149414" alt="Movie 6" data-trailer="https://youtu.be/63Saov8fgiE?si=zaALe9Ljn_VIJOs9" onclick="openTrailer(this)">
+      <img src="https://ik.imagekit.io/8akopd3mp/download.jpg?updatedAt=1766421329493" alt="Movie 7" data-trailer="https://youtu.be/qIBZlbJ7NUE?si=O1t9JIxIJuVvUEO0" onclick="openTrailer(this)">
+    </div>
+  </section>
+  <div id="trailerModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeTrailer()">✖</span>
+      <iframe id="trailerVideo" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+  </div>
+ <script src="main.js"></script>
+</body>
+</html>
