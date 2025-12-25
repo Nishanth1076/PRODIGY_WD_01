@@ -10,7 +10,7 @@ body {
   color: white;
 }
 
-/* Navbar */
+
 .navbar {
   position: fixed;
   top: 0;
@@ -57,7 +57,7 @@ body {
   cursor: pointer;
 }
 
-/* Banner */
+
 .banner {
   height: 70vh;
   background: url("https://ik.imagekit.io/8akopd3mp/Netflix%20Indian%20Movies%20and%20Web%20Series.jpg") center/cover no-repeat;
@@ -76,7 +76,7 @@ body {
   font-size: 18px;
 }
 
-/* Movies */
+
 .movie-row {
   padding: 20px 40px;
 }
@@ -114,7 +114,7 @@ body {
   display: none;
 }
 
-/* Modal */
+
 .modal {
   position: fixed;
   top: 0; left: 0;
@@ -150,7 +150,7 @@ body {
   z-index: 3000;
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
   .nav-links {
     position: absolute;
@@ -179,10 +179,11 @@ body {
   overflow: hidden;
 }
 .nav-links.active {
-  max-height: 300px; /* enough for all links */
+  max-height: 300px; 
 }
 .nav-links a {
   padding: 12px;
   text-align: center;
 }
 }
+
